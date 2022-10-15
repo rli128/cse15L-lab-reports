@@ -79,11 +79,13 @@ public class SearchEngine {
 ```
 
 ![My Image](sc-lab-report2.JPG)
-For my add method, if add is found in the path, then it will take whatever in the query (in this case apple) and adds the string "apple" in to a string array called num which was initialized in the very beginning of the code. It also increments the the int size by one which represents how many elements are in the num array.
+Running java NumberServer, you need to add any number between 1024 to 49151 (I picked 4004 example; java NumberServer 4004) which represents the port in which the local site is created on your computer. Using the URLHandler, it reads the url for this port and does various methods in order to store strings. I created this by copying the code given to us in lab 1 and tweaking some things around to match the intended methods. As you can see I added the prompt "Add stuff to the search bar using /add?s= or find out what's in the list using /contents" so it can remind me on how the program works.
 
 ![My Image](sc-lab-report2-2.JPG)
-for 
+For my add method, if add is found in the path, then it will take whatever in the query (in this case apple) and adds the string "apple" in to a string array called num which was initialized in the very beginning of the code. It also increments the the int size by one which represents how many elements are in the num array. 
 
 ![My Image](sc-lab-report2-3.JPG)
+
+
 ![My Image](sc-lab-report2-4.JPG)
 
