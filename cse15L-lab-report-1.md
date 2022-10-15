@@ -2,15 +2,15 @@ Ricky Li
 Joe Politz
 30 September 2022
 
-###CSE 15L Lab Report
+### CSE 15L Lab Report
 
-#Installing VScode
+# Installing VScode
 
 ![My Image](sc-lab-report-1.PNG)
 
 For the VSCode part, I didn’t have to do anything because I already used VSCode for cse11 last quarter but you can go to the visual studio code website and follow the instructions to download.
 
-#Remotely Connecting
+# Remotely Connecting
 
 ![My Image](sc-lab-report-1-2.PNG)
 
@@ -24,7 +24,7 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 
 After you say yes, you will then be prompted to input your password again
 
-#Trying Some Commands
+# Trying Some Commands
 
 
 ![My Image](sc-lab-report-1-3.PNG)
@@ -46,7 +46,7 @@ Cp as far as I know stands for class path and I assume that
 cat /home/linux/ieng6/cs15lfa22/public/hello.txt ~/
 This command printed out the txt file hello.txt on the remote server which outputted “Hi! Welcome to CSE15L Fall 22”
 
-#Moving Files with scp
+# Moving Files with scp
 
 
 ![My Image](sc-lab-report-1-5.PNG)
@@ -57,7 +57,7 @@ cse15lfa22au
 /home/linux/ieng6/cse15lfa22/cs15lfa22au
 /home/linux/ieng6/cse15lfa22/cs15lfa22au “
 
-#Setting an SSH Key
+# Setting an SSH Key
 
 
 ![My Image](sc-lab-report-1-7.PNG)
@@ -67,7 +67,7 @@ Then using the command ssh-keygen in the lab, I created two keys. I then used th
 scp /Users/ricky/.ssh/id_rsa.pub cs15lfa22au@ieng6.ucsd.edu:~/.ssh/authorized_keys
 Now I can ssh using the key I created and instead of typing my entire password to login to the remote server every time, I can just use a simpler phrase to continually log in.
 
-#Optimizing Remote Running
+# Optimizing Remote Running
 
 
 ![My Image](sc-lab-report-1-9.PNG)
