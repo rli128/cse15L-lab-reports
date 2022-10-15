@@ -50,3 +50,9 @@ class NumberServer {
 }
 
 ```
+
+![My Image](sc-lab-report2.JPG)
+![My Image](sc-lab-report2-2.JPG)
+![My Image](sc-lab-report2-3.JPG)
+![My Image](sc-lab-report2-4.JPG)
+
