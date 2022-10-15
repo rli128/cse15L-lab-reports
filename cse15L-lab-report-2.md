@@ -14,29 +14,55 @@ import java.net.URI;
 class Handler implements URLHandler {
     // The one bit of state on the server: a number that will be manipulated by
     // various requests.
-    int num = 0;
+    String[] num = new String[300];
+    int size = 0;
 
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
-            return String.format("Number: %d", num);
-        } else if (url.getPath().equals("/increment")) {
-            num += 1;
-            return String.format("Number incremented!");
+            return String.format("Add stuff to the search bar using /add?s= or find out what's in the list using /contents");
+        } else if (url.getPath().equals("/empty")) {
+            num = new String[300];
+            size = 0;
+            return String.format("Search bar has been emptied");
+        } else if (url.getPath().equals("/contents")) {
+            String list = "";
+            if (size == 0) {
+                return String.format(list);
+            }
+            for (int i=0; i < size; i++) {
+                list += num[i] + " ";
+            }
+            return String.format(list);
+        } else if (url.getPath().contains("/search")) {
+            String[] parameters = url.getQuery().split("=");
+                if (parameters[0].equals("s")) {
+                    String list = "";
+                    for (int i = 0; i < size; i++) {
+                        if (num[i].contains(parameters[1])) {
+                            list += num[i] + " ";
+                        }
+                        
+                    }
+                    return String.format("Search results: " + list);
+                }
         } else {
             System.out.println("Path: " + url.getPath());
             if (url.getPath().contains("/add")) {
                 String[] parameters = url.getQuery().split("=");
-                if (parameters[0].equals("count")) {
-                    num += Integer.parseInt(parameters[1]);
-                    return String.format("Number increased by %s! It's now %d", parameters[1], num);
+                if (parameters[0].equals("s")) {
+                    num[size] = (parameters[1]);
+                    size += 1;
+                    return String.format(parameters[1] + " has been added to the search");
                 }
             }
-            return "404 Not Found!";
         }
+        return "404 Not Found!";
     }
 }
 
-class NumberServer {
+
+
+public class SearchEngine {
     public static void main(String[] args) throws IOException {
         if(args.length == 0){
             System.out.println("Missing port number! Try any number between 1024 to 49151");
@@ -46,13 +72,18 @@ class NumberServer {
         int port = Integer.parseInt(args[0]);
 
         Server.start(port, new Handler());
+    
     }
 }
 
 ```
 
 ![My Image](sc-lab-report2.JPG)
+For my add method, if add is found in the path, then it will take whatever in the query (in this case apple) and adds the string "apple" in to a string array called num which was initialized in the very beginning of the code. It also increments the the int size by one which represents how many elements are in the num array.
+
 ![My Image](sc-lab-report2-2.JPG)
+for 
+
 ![My Image](sc-lab-report2-3.JPG)
 ![My Image](sc-lab-report2-4.JPG)
 
