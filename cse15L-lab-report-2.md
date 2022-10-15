@@ -143,3 +143,76 @@ static int[] reversed(int[] arr) {
 so I swapped the variables newArray and arr around in order for the code to produce the correct output.
 
 ### ListExamples
+
+For the ListExamples file, the filter method was not working correctly 
+
+```
+
+static List<String> filter(List<String> list, StringChecker sc) {
+    List<String> result = new ArrayList<>();
+    for(String s: list) {
+      if(sc.checkString(s)) {
+        result.add(0, s);
+      }
+    }
+    return result;
+  }
+  
+```
+
+My test looked like this 
+
+```
+
+@Test 
+	public void testFilter() {
+    StringChecker sc = new StringChecker() {
+
+        public boolean checkString(String s) {
+            if (s.length() > 5) {
+                return true;
+            }
+
+            return false;
+        }
+
+    };
+    
+    
+    List<String> input1 = new ArrayList<String>();
+    input1.add("Banana");
+    input1.add("Red");
+    input1.add("Motorcycle");
+
+    List<String> output = new ArrayList<String>();
+    output.add("Banana");
+    output.add("Motorcycle");
+
+    assertEquals(output, ListExamples.filter(input1, sc));
+	}
+
+```
+
+My string checker checked if the string in the List was greater than 5 characters or not (Ex. if i were to input list {Banana, Red, Motorcycle} ----> {Banana, Motorcycle}
+
+However it gave me this error message when I ran my tests.
+![My Image](sc-lab-report2-6.JPG)
+
+It outputted {Motorcycle, Banana} instead of {Banana, Motorcycle}
+
+I then realized that this is because in the line where it says result.add(0, s), it would send the string to the very beginning of the list which would mess up the original order of the list because the most recently added strings would move up to the front. After I removed the index 0 and simply put result.add(s), it fixed the code and outputted what it was intended to output
+
+
+```
+
+static List<String> filter(List<String> list, StringChecker sc) {
+    List<String> result = new ArrayList<>();
+    for(String s: list) {
+      if(sc.checkString(s)) {
+        result.add(0, s);
+      }
+    }
+    return result;
+  }
+  
+```
