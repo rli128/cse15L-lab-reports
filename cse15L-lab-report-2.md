@@ -85,7 +85,61 @@ Running java NumberServer, you need to add any number between 1024 to 49151 (I p
 For my add method, if add is found in the path, then it will take whatever in the query (in this case apple) and adds the string "apple" in to a string array called num which was initialized in the very beginning of the code. It also increments the the int size by one which represents how many elements are in the num array. 
 
 ![My Image](sc-lab-report2-3.JPG)
-
+My content method is used when the URLHandler sees /contents in the path. In the example above I added two other items "pineapple" and "kiwi". This method basically creates an empty string called list and it will add all the strings in the nums array followed by a space. The website will then output the list of strings that was stored (apple pineapple kiwi)
 
 ![My Image](sc-lab-report2-4.JPG)
+For my search method, if search is found in the path, it will grab whatever is in the query (for the image above it was "apple") then it will sift through all the strings in the num array to see if they contain "apple". It will then add the string to the empty list string followed by a space. Then the website will print out "Search results:" + the list of matching strings (in this case it was apple and pineapple)
 
+# Part 2
+
+### ArrayExamples
+
+In ArrayExamples, there was a bug in the reversed method
+
+```
+
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+  
+```
+
+I ran a test that looked like this
+
+```
+
+@Test 
+	public void testReverseRicky() {
+    int[] input1 = { 1, 2 };
+    ArrayExamples.reversed(input1);
+    assertArrayEquals(new int[]{ 2, 1 }, ArrayExamples.reversed(input1));
+	}
+    
+ ```
+ 
+ This test created an int array and used the reverse method in order to get the array in reversed order {1, 2}  ---->  {2, 1}
+ 
+ However when I ran the test these error messages popped up
+ ![My Image](sc-lab-report2-5.JPG)
+ 
+ I then realized that the bug happened because in the Reversed method code, it creates a new int array for the reversed integers to be stored but instead of updating the new array, the code would update the old array arr from the new array which had nothing in it.
+ 
+ ```
+
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    return newArray;
+  }
+  
+```
+
+so I swapped the variables newArray and arr around in order for the code to produce the correct output.
+
+### ListExamples
