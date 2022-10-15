@@ -2,7 +2,7 @@ Ricky Li
 Joe Politz
 30 September 2022
 
-### CSE 15L Lab Report
+### CSE 15L Lab Report 1
 
 # Installing VScode
 
