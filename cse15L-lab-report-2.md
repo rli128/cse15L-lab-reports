@@ -98,7 +98,9 @@ This method creates an empty string called "list" and it runs a for loop for the
 
 ![My Image](sc-lab-report2-4.JPG)
 
-For my search feature  found in the path, it will grab whatever is in the query (for the image above it was "apple") then it will sift through all the strings in the num array to see if they contain "apple". It will then add the string to the empty list string followed by a space. Then the website will print out "Search results:" + the list of matching strings (in this case it was apple and pineapple)
+For my search feature if search is found in the path using the handleRequest(URI url) and getPath() methods, it will grab whatever using is in the query past the "=" using the getQuery method (for the image above it was "apple"). 
+
+An empty string named "list" is created in order to store all the strings that matches whatever was searched. Then it will sift through all the strings in the num array using a for loop to see if they contain "apple". It will then add the string to the empty list string followed by a space. Then the website will print out "Search results:" + the list of matching strings (in this case it was apple and pineapple)
 
 # Part 2
 
