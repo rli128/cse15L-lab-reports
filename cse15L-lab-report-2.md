@@ -79,16 +79,26 @@ public class SearchEngine {
 ```
 
 ![My Image](sc-lab-report2.JPG)
-Running java NumberServer, you need to add any number between 1024 to 49151 (I picked 4004 example; java NumberServer 4004) which represents the port in which the local site is created on your computer. Using the URLHandler, it reads the url for this port and does various methods in order to store strings. I created this by copying the code given to us in lab 1 and tweaking some things around to match the intended methods. As you can see I added the prompt "Add stuff to the search bar using /add?s= or find out what's in the list using /contents" so it can remind me on how the program works.
+
+Running java NumberServer, you need to add any number between 1024 to 49151 (I picked 4004 example; java NumberServer 4004) which represents the port in which the local site is created on your computer. Using the URLHandler, it reads the url for this port and does various methods in order to store strings. I created this by copying the code given to us in lab 1 and tweaking some things around to match the intended methods.
+
+When the java file first runs, the code creates an empty string Array with size 300 called num and initializes an integer named size that is set at 0. When visiting the local page, the method String handleRequest(URI url) which uses the getPath() method to grab the path of the url parameter. If the path contains "/", then the string returned will be printed on the screen which "Add stuff to the search bar using /add?s= or find out what's in the list using /contents". This is so it can remind me on how the program works.
 
 ![My Image](sc-lab-report2-2.JPG)
-For my add method, if add is found in the path, then it will take whatever in the query (in this case apple) and adds the string "apple" in to a string array called num which was initialized in the very beginning of the code. It also increments the the int size by one which represents how many elements are in the num array. 
+
+For adding things into the list the handleRequest(URI url) is also used however when using the getPath() function, if add is found in the path instead of just "/".
+
+When add is found in the path, the getQuery() function is used and it grabs whatever string is in the query after the "=". For the example above, the string after the "=" is "apple", so the code will grab the apple string and put it into the string array num. The code will also increment the size by 1 and return "apple has been added to the search"
 
 ![My Image](sc-lab-report2-3.JPG)
-My content method is used when the URLHandler sees /contents in the path. In the example above I added two other items "pineapple" and "kiwi". This method basically creates an empty string called list and it will add all the strings in the nums array followed by a space. The website will then output the list of strings that was stored (apple pineapple kiwi)
+
+The content feature also uses the handleRequest(URI url) method and is introduced if getPath() sees /contents in the path. In the example above I added two other items "pineapple" and "kiwi". 
+
+This method creates an empty string called "list" and it runs a for loop for the amount of elements in the array num. It will then add all the strings in num followed by a space. The website will then return "list"  which is a string of all the strings that were stored in num (apple pineapple kiwi).
 
 ![My Image](sc-lab-report2-4.JPG)
-For my search method, if search is found in the path, it will grab whatever is in the query (for the image above it was "apple") then it will sift through all the strings in the num array to see if they contain "apple". It will then add the string to the empty list string followed by a space. Then the website will print out "Search results:" + the list of matching strings (in this case it was apple and pineapple)
+
+For my search feature  found in the path, it will grab whatever is in the query (for the image above it was "apple") then it will sift through all the strings in the num array to see if they contain "apple". It will then add the string to the empty list string followed by a space. Then the website will print out "Search results:" + the list of matching strings (in this case it was apple and pineapple)
 
 # Part 2
 
