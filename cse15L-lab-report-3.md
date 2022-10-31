@@ -73,3 +73,15 @@ The grep command searches for a matching string in a file
 grep -r cigarettes technical/biomed
 
 The -r option allows you to grep an entire directory instead of just one file. For the example above, I looked through the entire biomed directory for files containing the word "cigarettes"
+
+## -l 
+
+![My Image](sc-lab-report3-8.JPG)
+grep -l cigarettes techincal/biomed/*
+
+The -l option will grep for the given files but will only return the file names instead of the file name and the lines containing the string. For the example above, I grepped through all the files in the biomed directory containing "cigarettes". This way is a lot easier to read compared to the previous example.
+
+## -e 
+grep -e cigarettes -e carcinogenic technical/biomed/*
+
+The -e option allows you to grep for multiple strings at once. For the example above, I grepped the biomed directory for files containing cigarettes or carcinogenic.
