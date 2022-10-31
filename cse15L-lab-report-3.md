@@ -11,12 +11,14 @@ The less command allows you to look at the contents of a file. You can scroll th
 ## -N
 
 ![My Image](sc-lab-report3-4.JPG)
+less -N technical/plos/pmed.002057.txt
 
 The -N option gives you the option to have line numbers on the left side of the file so that you have an easier time looking through the file. I used the -N file on the pmed.0020209.txt file and I saw that it contained 299 lines.
 
 ## -p
 
 ![My Image](sc-lab-report3-5.JPG)
+less -pwhistleblower technical/plos/pmed.0020209.txt
 
 The -p option highlights what you are looking for while you are using less. For the example above I typed less -pwhistleblower technical/plos/pmed.0020209.txt 
 
@@ -24,7 +26,8 @@ This highlighted all the "whistleblower" words in the file making them easier fo
 
 ## -X
 
-![My Image](sc-lab-report3-4.JPG)
+![My Image](sc-lab-report3-6.JPG)
+less -X 
 
 The -X option makes the contents of the file stay on the screen even after you leave less. Usually when you ar in less and you press q, the contents of the file go away when the less command ends, but if you use the -X option, the contents will stay as shown above.
 
@@ -52,3 +55,12 @@ The -mtime option allows you to search for a file based on the time the file was
 
 
 # Grep
+
+The grep command searches for a matching string in a file
+
+## -r
+
+![My Image](sc-lab-report3-7.JPG)
+grep -r cigarettes technical/biomed
+
+The -r option allows you to grep an entire directory instead of just one file. For the example above, I looked through the entire biomed directory for files containing the word "cigarettes"
