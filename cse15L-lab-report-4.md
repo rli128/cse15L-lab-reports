@@ -84,14 +84,22 @@ class DocSearchServer {
 
 Our sequence of vim commands looked like this:
 
-`/` `s` `t` `a` `r` `t` `<Enter>` `d` `w` `i` `base` `<Esc>` `n` `d` `w` `i` `base` `<Esc>` `:` `w`
+`/` `s` `t` `a` `r` `t` `<Enter>` `d` `w` `i` `base` `<Esc>` `n` `d` `w` `i` `base` `<Esc>` `:` `w` `<Enter>`
   
 ![My Image](sc-lab-report4-2.JPG)
+
+This is what it looks like when we first open the DocSearchServer.java file in vim using `vim DocSearchServer.java`
   
 ![My Image](sc-lab-report4.JPG)
+
+after `/` `s` `t` `a` `r` `t` `<Enter>` it puts our cursor on the first instance of search on the code. Then using `d` `w` `i` we delete the word search and enter insert mode where we can type out base. Then we type out `<Esc>` to leave insert mode.
   
 ![My Image](sc-lab-report4-3.JPG)
+
+The `n` key then goes to the next instance of search and then using `d` `w` `i` we delete the word search again and enter insert mode to type out base once again. Then we type out `<Esc>` to leave insert mode.
   
 ![My Image](sc-lab-report4-4.JPG)
+
+After we have finished editing the file, this is what it looks like in vim. We then press the commands `:` `w` `<Enter>` in order to save our work.
   
   
