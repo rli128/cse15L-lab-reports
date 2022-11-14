@@ -85,11 +85,9 @@ class DocSearchServer {
 
 / s t a r t <Enter> d w i base <Esc> n d  w  i b a s e <Esc> : w
   
-![My Image](sc-lab-report4.JPG)
-    
-![My Image](sc-lab-report4-1.JPG)
-  
 ![My Image](sc-lab-report4-2.JPG)
+  
+![My Image](sc-lab-report4.JPG)
   
 ![My Image](sc-lab-report4-3.JPG)
   
