@@ -108,24 +108,24 @@ After we have finished editing the file, this is what it looks like in vim. We t
 Editing file on my vs code then scp : 
 
 
-2 minutes 28 seconds, I forgot how the format to connect into the remote server was so I had to look it up real quick in order to ssh and scp into the remote account.
+    2 minutes 28 seconds, I forgot how the format to connect into the remote server was so I had to look it up real quick in order to ssh and scp into the remote account.
 
 
 Using vim to edit file on remote server : 
 
 
-40~ seconds, not much trouble here, once I was in vim mode it was really easy to update the file and then exit out to run test.sh
+    40~ seconds, not much trouble here, once I was in vim mode it was really easy to update the file and then exit out to run test.sh
 
 
 
 
 ### Which of these two styles would you prefer using if you had to work on a program that you were running remotely, and why? 
 
-I would rather go into the remote server and use vim in order to edit and then save the file just because it is a lot easier and quicker to do in comparison to scp'ing the file.
+    I would rather go into the remote server and use vim in order to edit and then save the file just because it is a lot easier and quicker to do in comparison to scp'ing the file.
 
 ### What about the project or task might factor into your decision one way or another? (If nothing would affect your decision, say so and why!)
 
-If the task is a lot easier and has minor changes, I would prefer using vim. If the task required a lot more work and has a lot of errors, I would rather work on my own vs code and then scp the file because I am more comfortable editing files this way and I am not quite efficient using vim as of now.
+    If the task is a lot easier and has minor changes, I would prefer using vim. If the task required a lot more work and has a lot of errors, I would rather work on my own vs code and then scp the file because I am more comfortable editing files this way and I am not quite efficient using vim as of now.
 
 
   
