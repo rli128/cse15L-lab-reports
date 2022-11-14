@@ -101,5 +101,17 @@ The `n` key then goes to the next instance of search and then using `d` `w` `i` 
 ![My Image](sc-lab-report4-4.JPG)
 
 After we have finished editing the file, this is what it looks like in vim. We then press the commands `:` `w` `<Enter>` in order to save our work.
-  
+
+
+# Part 2
+
+Editing file on my vs code then scp : 2 minutes 28 seconds, I forgot how the format to connect into the remote server was so I had to look it up real quick in order to ssh and scp into the remote account.
+
+Using vim to edit file on remote server : 40~ seconds, not much trouble here, once I was in vim mode it was really easy to update the file and then exit out to run test.sh
+
+### Which of these two styles would you prefer using if you had to work on a program that you were running remotely, and why? 
+
+### What about the project or task might factor into your decision one way or another? (If nothing would affect your decision, say so and why!)
+
+
   
