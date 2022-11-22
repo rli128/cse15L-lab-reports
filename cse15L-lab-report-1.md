@@ -67,11 +67,22 @@ This command printed out the txt file hello.txt on the remote server which outpu
 
 # Moving Files with scp
 
+In order to show how to move files with scp, I created a new file called WhereAmI.java
+ 
+I made WhereAmI.java using notepad where I typed the code out and made sure to save the file as a .java file.
+ 
+![My Image](sc-lab-report1-3.JPG)
 
+I then opened up the file in visual studio code in order to use the scp command (scp file location) to copy the file from my local computer to the remote server on my account.
+
+ 
+For the example below I typed in [scp WhereAmI.java cse15lfa22au@ieng6.ucsd.edu:~/]
 ![My Image](sc-lab-report-1-5.PNG)
 ![My Image](sc-lab-report-1-6.PNG)
 
-I copied the WhereAmI.java file using the command scp command which allows me to grab a file and copy it over to the remote server on my ucsd account. That is when it printed the os, username, the home directory, and my current directory for wherever I was on the remote server. “Linux
+ 
+ 
+That is when it printed the os, username, the home directory, and my current directory for wherever I was on the remote server. “Linux
 cse15lfa22au
 /home/linux/ieng6/cse15lfa22/cs15lfa22au
 /home/linux/ieng6/cse15lfa22/cs15lfa22au “
