@@ -10,11 +10,22 @@ Joe Politz
 
 For the VSCode part, I didn’t have to do anything because I already used VSCode for cse11 last quarter but you can go to the visual studio code website and follow the instructions to download.
 
+https://code.visualstudio.com/download 
+
+There are different buttons you need to click depending on if you are downloading on Windows, Mac, or Linux OS.
+
 # Remotely Connecting
 
 ![My Image](sc-lab-report-1-2.PNG)
 
 For remotely connecting, I personally downloaded OpenShell onto my laptop, then I requested to change my password through the ucsd system in order to log in to my remote cse account. It wouldn’t let me connect during lab hours but once I got back home and changed my password again I went through. I logged in using the ssh command followed by the name of my account
+
+Here is the website to look up your ieng6 account using your ucsd credentials.
+https://sdacs.ucsd.edu/~icc/index.php
+
+Also if you need to change your password here is a tutorial
+https://docs.google.com/document/d/1hs7CyQeh-MdUfM9uv99i8tqfneos6Y8bDU0uhn1wqho/edit/
+
 Ex. “ssh cs15lfa22zz@ieng6.ucsd.edu”
 It will then prompt you for your password. Typing the password is difficult because it doesn’t show you any inputs. The server will tell you that the authenticity of the host cannot be established then ask you if you still want to connect to the host.
 Looking like this
