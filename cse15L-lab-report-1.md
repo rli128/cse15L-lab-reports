@@ -76,16 +76,20 @@ I made WhereAmI.java using notepad where I typed the code out and made sure to s
 I then opened up the file in visual studio code in order to use the scp command (scp file location) to copy the file from my local computer to the remote server on my account.
 
  
-For the example below I typed in [scp WhereAmI.java cse15lfa22au@ieng6.ucsd.edu:~/]
+For the example below I typed in scp WhereAmI.java cse15lfa22au@ieng6.ucsd.edu:~/
 ![My Image](sc-lab-report-1-5.PNG)
-![My Image](sc-lab-report-1-6.PNG)
 
- 
- 
-That is when it printed the os, username, the home directory, and my current directory for wherever I was on the remote server. “Linux
-cse15lfa22au
-/home/linux/ieng6/cse15lfa22/cs15lfa22au
-/home/linux/ieng6/cse15lfa22/cs15lfa22au “
+I then compiled the WhereAmI.java file using javac WhereAmI.java and ran the program which outputed 
+
+Linux    <----- OS
+
+cse15lfa22au     <----- user
+
+/home/linux/ieng6/cse15lfa22/cse15lfa22au    <----- home
+
+/home/linux/ieng6/cse15lfa22/cse15lfa22au    <----- current directory
+
+![My Image](sc-lab-report-1-6.PNG)
 
 # Setting an SSH Key
 
