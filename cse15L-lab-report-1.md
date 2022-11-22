@@ -93,7 +93,7 @@ cse15lfa22au     <----- user
 
 # Setting an SSH Key
 
-We can create a key from the 
+You can create SSH keys so that you don't have to type in your password everytime you want to scp or ssh into the remote server. 
 
 ![My Image](sc-lab-report-1-7.PNG)
 ![My Image](sc-lab-report-1-8.PNG)
