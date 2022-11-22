@@ -20,7 +20,7 @@ There are different buttons you need to click depending on if you are downloadin
 
 For remotely connecting, I personally downloaded OpenShell onto my laptop, then I requested to change my password through the ucsd system in order to log in to my remote cse account. It wouldn’t let me connect during lab hours but once I got back home and changed my password again I went through. I logged in using the ssh command followed by the name of my account
 
-![My Image](sc-lab-report-1-2.JPG)
+![My Image](sc-lab-report1-2.JPG)
 
 In order to remotely connect, you will need to open up a new window on visual studio code. Then on the top right, you can hover over view and go down to where it says Terminal. Click on terminal in order to view the terminal (or you can press <Ctrl> + `). The terminal is where you will be typing your commands. You also need to figure out what your ieng6 account is.
 
@@ -33,7 +33,7 @@ https://docs.google.com/document/d/1hs7CyQeh-MdUfM9uv99i8tqfneos6Y8bDU0uhn1wqho/
 Ex. “ssh cs15lfa22zz@ieng6.ucsd.edu”
 It will then prompt you for your password. 
 
-![My Image](sc-lab-report-1.JPG)
+![My Image](sc-lab-report1.JPG)
  
 Typing the password is difficult because it doesn’t show you any inputs. The server will tell you that the authenticity of the host cannot be established then ask you if you still want to connect to the host.
 Looking like this
