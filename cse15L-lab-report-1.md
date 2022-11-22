@@ -95,21 +95,33 @@ cse15lfa22au     <----- user
 
 You can create SSH keys so that you don't have to type in your password everytime you want to scp or ssh into the remote server. 
 
+By typing and entering the ssh-keygen command, you generate a private and public key. Then it will ask you where you want to store the keys. In the example below I stored in my default path (/Users/ricky/.ssh/id_rsa).
+
 ![My Image](sc-lab-report-1-7.PNG)
+
+
+Then we have to use the scp command to move the public key onto the remote server. For my case I typed in the command:
+
+
+scp /Users/ricky/.ssh/id_rsa.pub cs15lfa22au@ieng6.ucsd.edu:~/.ssh/authorized_keys
+
+However for your case, you might have to change the the file name and the location based on what your computer's default path is and your ieng6 account.
+
 ![My Image](sc-lab-report-1-8.PNG)
 
-Then using the command ssh-keygen in the lab, I created two keys. I then used the scp command to move one of the keys onto the remote server. 
-scp /Users/ricky/.ssh/id_rsa.pub cs15lfa22au@ieng6.ucsd.edu:~/.ssh/authorized_keys
-Now I can ssh using the key I created and instead of typing my entire password to login to the remote server every time, I can just use a simpler phrase to continually log in.
+After we move the key, the terminal will then prompt you to enter a phrase you can use instead of typing in your password to ssh and scp.
+
+Now I can ssh using the key I created to login to the remote server. If I am logging in to the remote server using the laptop I used, I can just type my custom phrase in.
 
 # Optimizing Remote Running
 
 
-![My Image](sc-lab-report-1-9.PNG)
-
-I ran the ls command on the remote computer using my key to easily list the files in the directory. I simply used my passphrase instead of my normal password.
+You can combine commands in order to run these commands more effeciently and effectively. For the example below, I ran the ls command on the remote computer using my key to easily list the files in the directory. I simply used my passphrase instead of my normal password.
 ssh cs15lfa22au@ieng6.ucsd.edu “ls”
- I also used multiple commands at once to compile and run the WhereAmI java file more efficiently instead of changing the path for the code, compiling, then running the code all in separate lines
+
+I also used multiple commands at once to compile and run the WhereAmI java file more efficiently instead of changing the path for the code, compiling, then running the code all in separate lines
 “cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI”
+
+![My Image](sc-lab-report-1-9.PNG)
 
 
