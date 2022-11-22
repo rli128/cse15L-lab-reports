@@ -22,7 +22,7 @@ For remotely connecting, I personally downloaded OpenShell onto my laptop, then 
 
 ![My Image](sc-lab-report1-2.JPG)
 
-In order to remotely connect, you will need to open up a new window on visual studio code. Then on the top right, you can hover over view and go down to where it says Terminal. Click on terminal in order to view the terminal (or you can press Ctrl + `). The terminal is where you will be typing your commands. You also need to figure out what your ieng6 account is.
+In order to remotely connect, you will need to open up a new window on visual studio code. Then on the top right, you can hover over view and go down to where it says Terminal. Click on terminal in order to view the terminal. The terminal is where you will be typing your commands. You also need to figure out what your ieng6 account is.
 
 Here is the website to look up your ieng6 account using your ucsd credentials.
 https://sdacs.ucsd.edu/~icc/index.php
