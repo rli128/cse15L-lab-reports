@@ -7,3 +7,5 @@ CSE15L Lab Reports
 [Lab Report 3](cse15L-lab-report-3.md)
 
 [Lab Report 4](cse15L-lab-report-4.md)
+
+[Lab Report 5](cse15L-lab-report-5.md)
