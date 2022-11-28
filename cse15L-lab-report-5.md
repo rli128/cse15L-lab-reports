@@ -41,16 +41,22 @@ But it ran on VS Code
 
 
 https://github.com/ucsd-cse15l-f22/list-methods-lab3
+
+
 ![My Image](sc-lab-report5.2.JPG)
 
 
 
 https://github.com/ucsd-cse15l-f22/list-methods-corrected
+
+
 ![My Image](sc-lab-report5.1.JPG)
 
 
 
 https://github.com/ucsd-cse15l-f22/list-methods-filename
+
+
 ![My Image](sc-lab-report5.3.JPG)
 
 
