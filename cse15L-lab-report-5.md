@@ -63,4 +63,43 @@ https://github.com/ucsd-cse15l-f22/list-methods-filename
 
 For https://github.com/ucsd-cse15l-f22/list-methods-filename, the code is implemented well however the file is saved with the wrong name
 
-'rm -rf student-submission'
+This line of code in my grade.sh bash file checks if there is an existing student-submission directory from previous grading and if there is it will delete that directory
+
+`rm -rf student-submission`
+
+This line will grab the url inputted from the terminal and then copy the repository
+
+`git clone $1 student-submission`
+
+Then I cd into the student-submission folder and run an If command to find out if the ListExamples.java file is in the directory or not
+
+```
+
+if [[ ! -f ListExamples.java ]]
+then
+  echo "You are missing ListExamples.java"
+  echo "Fail"
+  exit
+
+fi
+
+
+```
+
+In the example above, the file was not in the directory so it outputs ""You are missing ListExamples.java Fail"
+
+Because the bash script ended, the rest of the lines didn't run however, 
+
+```
+
+cp ../TestListExamples.java .
+
+
+javac -cp ".;../lib/hamcrest-core-1.3.jar;../lib/junit-4.13.2.jar" *.java
+java -cp ".;../lib/junit-4.13.2.jar;../lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore TestListExamples | grep -e OK -e Failures: > results
+
+cat results
+
+```
+
+The rest of the code will copy my TestListExamples.java file which contains all the tests I created in order to test out the student submitted code. It will then run the tests and create a results file that contains the results of the tests. I then print out the test results for the student to see.
