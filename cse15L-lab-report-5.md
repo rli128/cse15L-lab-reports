@@ -63,4 +63,4 @@ https://github.com/ucsd-cse15l-f22/list-methods-filename
 
 For https://github.com/ucsd-cse15l-f22/list-methods-filename, the code is implemented well however the file is saved with the wrong name
 
-<rm -rf student-submission>
+'rm -rf student-submission'
